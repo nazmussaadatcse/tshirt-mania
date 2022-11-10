@@ -5,10 +5,10 @@ const Cart = ({cart,handleRemoveFromCart}) => {
     //conditional rendering
     //1. element variable
     //2. ternary operator, condition ? true:false
-    
+    //
     let command;
     if(cart.length===0){
-        command = <p>Please add at least one item</p>
+        command = <p>Please add at least 1 item</p>
     }
     else if(cart.length===1){
         command = <p>Please add more</p>
