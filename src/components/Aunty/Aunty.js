@@ -5,7 +5,7 @@ import { RingContext } from '../Grandpa/Grandpa';
 const Aunty = () => {
     const [house, setHouse] = useContext(RingContext);
     const updateHouse = ()=>{
-        const newHouse=house+1;
+        const newHouse=house+2;
         setHouse(newHouse);
     }
     return (
