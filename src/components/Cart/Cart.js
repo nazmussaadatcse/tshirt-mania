@@ -34,7 +34,7 @@ const Cart = ({cart,handleRemoveFromCart}) => {
                 <p>Add more..</p>
                 </div>}
             {command}
-            {cart.length<3 ? <p>Keep adding</p> : <button>Remove All</button>}
+            {cart.length>3 ? <p>Keep adding</p> : <button>Remove All</button>}
             {cart.length===4 && <button className='orange'>Review Order</button>}
         </div>
     );

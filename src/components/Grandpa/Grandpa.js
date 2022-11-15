@@ -10,8 +10,6 @@ export const RingContext = createContext('Diamond');
 
 const Grandpa = () => {
 
- 
-
     const [house, setHouse] = useState(1);
     const ornaments = 'Diamond Ring';
     const handleBuyAHouse = () => {
@@ -19,7 +17,7 @@ const Grandpa = () => {
         setHouse(newHouseCount);
     }
     return (
-        <RingContext.Provider value={ornaments}>
+        <RingContext.Provider value={[house, setHouse]}>
             <div className='grandpa'>
                 <h2>Grandpa</h2>
                 <button onClick={handleBuyAHouse}>Buy A House</button>

@@ -5,7 +5,10 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <nav>
+            <h2 className='Header'>TShirt-Maina</h2>
+            <h2>Context API <small>& Conditional Rendering</small></h2>
+            
+            <nav className='menu'>
                 <Link to={"/home"}>Home</Link>
                 <Link to={"/orderreview"}>Order Review</Link>
                 <Link to={"/grandpa"}>Grandpa</Link>
