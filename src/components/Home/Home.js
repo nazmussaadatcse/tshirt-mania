@@ -23,6 +23,10 @@ const Home = () => {
         const rest = cart.filter(tShirt=> tShirt._id !== selectedItem._id);
         setCart(rest);
     }
+    const removeAll =()=>{
+        const rest =[];
+        setCart(rest);
+    }
 
     return (
         <div className='home-container'>
@@ -40,6 +44,7 @@ const Home = () => {
             <div className="cart-container">
                 <Cart
                 handleRemoveFromCart={handleRemoveFromCart}
+                removeAll={removeAll}
                 cart={cart}
                 ></Cart>
             </div>
