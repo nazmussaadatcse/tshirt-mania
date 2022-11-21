@@ -3,7 +3,8 @@ import useTShirts from '../../hooks/useTShirts';
 import Cart from '../Cart/Cart';
 import TShirt from '../TShirt/TShirt';
 import './Home.css'
-
+//Not responsive 
+// just functional design
 const Home = () => {
     const [tShirts,setTShirts] = useTShirts();
     const [cart,setCart] =  useState([]);
